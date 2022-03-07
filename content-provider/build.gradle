@@ -27,9 +27,9 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'androidx.room:room-runtime:2.4.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.room:room-runtime:2.4.2'
     implementation 'androidx.work:work-runtime:2.7.1'
-    annotationProcessor 'androidx.room:room-compiler:2.4.0'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
 
 }

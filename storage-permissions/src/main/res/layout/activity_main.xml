@@ -18,6 +18,7 @@
         android:id="@+id/create_file_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create file /sdcard/Omo.txt"
+        android:text="Create test file"
+        android:enabled="false"
         android:textAllCaps="false" />
 </LinearLayout>

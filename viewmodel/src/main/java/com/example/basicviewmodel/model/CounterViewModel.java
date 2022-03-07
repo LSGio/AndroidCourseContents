@@ -5,11 +5,11 @@ import androidx.lifecycle.ViewModel;
 public class CounterViewModel extends ViewModel {
     private int mCounter;
 
-    public int getmCounter() {
+    public int getCounter() {
         return mCounter;
     }
 
-    public void setmCounter(int mCounter) {
+    public void setCounter(int mCounter) {
         this.mCounter = mCounter;
     }
 }

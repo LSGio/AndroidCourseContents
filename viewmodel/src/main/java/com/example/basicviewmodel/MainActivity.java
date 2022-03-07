@@ -13,6 +13,8 @@ import com.example.basicviewmodel.model.CounterViewModel;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    // TODO : add shared logging library to be used by all modules
+
     private static final String TAG = "@@MainActivity";
     private Button mIncrementCounterButton;
     private TextView mCounterValueTextView;
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mIncrementCounterButton.setOnClickListener(this);
         mCounterViewModel = new ViewModelProvider(this).get(CounterViewModel.class);
 
-        mCounterValueTextView.setText(String.valueOf(mCounterViewModel.getmCounter()));
+        mCounterValueTextView.setText(String.valueOf(mCounterViewModel.getCounter()));
     }
 
     @Override
@@ -67,8 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.increment_counter_button:
-                mCounterViewModel.setmCounter(mCounterViewModel.getmCounter() + 1);
-                mCounterValueTextView.setText(String.valueOf(mCounterViewModel.getmCounter()));
+                mCounterViewModel.setCounter(mCounterViewModel.getCounter() + 1);
+                mCounterValueTextView.setText(String.valueOf(mCounterViewModel.getCounter()));
                 break;
             default:
                 Log.d(TAG, "onClick: case not implemented yet!");
